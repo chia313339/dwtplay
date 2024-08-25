@@ -1,14 +1,18 @@
 # dwtplay
 
 # Build the Docker image
+```
 sudo docker build -t dwt_fishing .
 sudo docker build -t dwt_jackpot .
 sudo docker build -t dwt_poker .
+```
 
 # Run the Docker container on port 
+```
 sudo docker run -d -p 8701:80 --restart always dwt_fishing 
 sudo docker run -d -p 8702:80 --restart always dwt_jackpot 
 sudo docker run -d -p 8703:80 --restart always dwt_poker 
+```
 
 # setting nginx
 sudo nano /etc/nginx/sites-available/default
